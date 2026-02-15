@@ -4,6 +4,9 @@ from app.config import DATA_FOLDER
 
 
 def get_all_files():
+    """
+    Return sorted list of all available year files.
+    """
     if not os.path.exists(DATA_FOLDER):
         return []
 
@@ -13,7 +16,10 @@ def get_all_files():
     ])
 
 
-def save_json(year, records):
+def save_json(year: int, records: list):
+    """
+    Save extracted records into year-based JSON file.
+    """
     os.makedirs(DATA_FOLDER, exist_ok=True)
 
     filename = f"tmm_legends_{year}.json"
@@ -25,7 +31,11 @@ def save_json(year, records):
     return filepath
 
 
-def load_json(year=None):
+def load_json(year: int | None = None):
+    """
+    Load JSON dataset.
+    If year not provided, latest dataset is returned.
+    """
     files = get_all_files()
 
     if not files:

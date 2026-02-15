@@ -1002,18 +1002,9 @@
         "NAME": "SANJAI BANERJI",
         "GENDER": "M",
         "CITY": "SATNA",
-        "STATE": "\"MADHYA PRADESH",
-        "NO. OF MARATHONS": null,
-        "STARS": "",
-        "YEAR": 2025
-    },
-    {
-        "NAME": "\"",
-        "GENDER": "12",
-        "CITY": "*",
-        "STATE": "",
-        "NO. OF MARATHONS": null,
-        "STARS": "",
+        "STATE": "MADHYA PRADESH",
+        "NO. OF MARATHONS": 12,
+        "STARS": "*",
         "YEAR": 2025
     },
     {

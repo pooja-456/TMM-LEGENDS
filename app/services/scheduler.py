@@ -5,9 +5,12 @@ scheduler = BackgroundScheduler()
 
 
 def start_scheduler(interval_hours: int):
+    """
+    Start background scheduler for periodic scraping.
+    """
     scheduler.add_job(
         scrape_and_store,
-        "interval",
+        trigger="interval",
         hours=interval_hours
     )
 
